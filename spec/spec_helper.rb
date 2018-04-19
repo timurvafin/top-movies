@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "byebug"
+require "active_support/all"
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.syntax = :expect

@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby -Ilib
+
+require "bundler/setup"
+require "itunes"
+require "filter"
+
+puts "Loading iTunes top movies..."
+puts
+itunes_movies = Itunes.new.top_movies
+
+puts "Filtering best from Kinopoisk..."
+puts
+Filter.new(itunes_movies).top_movies.each do |movie|
+  puts "#{movie.name}"
+  puts `curl -Ls #{movie.artwork} | imgcat`
+  puts "#{movie.description}"
+  puts
+  puts "  Rating: #{movie.rating}"
+  puts "  Kinopoisk: #{movie.kinopoisk_link}"
+  puts "  Rutracker: #{movie.rutracker_link}"
+  puts
+  puts
+end
+

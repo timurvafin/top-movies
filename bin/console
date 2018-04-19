@@ -3,7 +3,7 @@
 require "bundler/setup"
 
 # include here main library file
-# require "main-file"
+require "list"
 
 require "irb"
 IRB.start

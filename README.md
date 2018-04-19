@@ -1,9 +1,16 @@
-# Ruby base
+# iTunes top movies (Kinopoisk based)
 
 ## Install
 
 ```bash
+# setup imgcat
+curl --output ~/bin/imgcat http://iterm2.com/utilities/imgcat
+chmod +x ~/bin/imgcat
+
+# setup tool
+git clone ...
 bin/setup
+bin/list
 ```
 
 ## Quality tools
@@ -17,9 +24,4 @@ bin/setup
 
 ## Credits
 
-Ruby Base is maintained by [Timur Vafin](http://github.com/timurvafin).
-It was written by [Flatstack](http://www.flatstack.com) with the help of our
-[contributors](http://github.com/fs/ruby-base/contributors).
-
-
-[<img src="http://www.flatstack.com/logo.svg" width="100"/>](http://www.flatstack.com)
+Maintained by [Timur Vafin](http://github.com/timurvafin).
