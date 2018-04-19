@@ -39,7 +39,7 @@ class Movie
   end
 
   def kinopoisk_search_name
-    name.gsub(/[,:]/, "")
+    name.gsub(/[.,:!?]/, "")
   end
 
   def kinopoisk_search
